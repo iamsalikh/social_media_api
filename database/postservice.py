@@ -3,6 +3,7 @@ from datetime import datetime
 from database.models import UserPost, PostPhoto
 from database import get_db
 
+
 # Добавить пост
 def add_post_db(user_id, post_text):
     db = next(get_db())

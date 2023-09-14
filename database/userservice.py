@@ -71,6 +71,7 @@ def delete_profile_photo_db(user_id):
 
     return False
 
+
 # Получить всех пользователей
 def get_all_users_db():
     db = next(get_db())
@@ -78,6 +79,7 @@ def get_all_users_db():
     all_users = db.query(User).all()
 
     return all_users
+
 
 # Получить информацию про определенного пользователя
 def get_exact_users_db(user_id):
